@@ -31,14 +31,14 @@ function init() {
 before.addEventListener('click', function(){
 	if(counter > 0){
 	counter = counter - 1;
-	}
+	}else { counter = 4}
 	image.setAttribute('src', imageList[counter]);
 })
 
 next.addEventListener('click', function(){
 	if(counter < 4){
 	counter = counter + 1;
-	}
+	}else { counter = 0}
 	image.setAttribute('src', imageList[counter]);
 })
 
